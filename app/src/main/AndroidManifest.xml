@@ -12,21 +12,7 @@
         android:theme="@style/Theme.AndroidERestaurant"
         tools:targetApi="31">
 
-        <activity
-            android:name=".HomeActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AndroidERestaurant">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <!-- Déclarer votre nouvelle activité ici -->
-        <activity
-            android:name=".PlatsActivity"
-            android:label="Plats Activity" />
 
     </application>
 
