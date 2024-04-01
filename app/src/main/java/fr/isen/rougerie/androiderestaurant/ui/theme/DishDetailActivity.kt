@@ -59,7 +59,6 @@ import java.io.FileNotFoundException
 import androidx.compose.material3.*
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.platform.LocalContext
-import fr.isen.rougerie.androiderestaurant.R
 
 
 class DishDetailActivity : ComponentActivity() {

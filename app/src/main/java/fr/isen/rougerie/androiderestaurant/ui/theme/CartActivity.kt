@@ -29,6 +29,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import java.io.FileNotFoundException
 
 class CartActivity : ComponentActivity() {
@@ -52,7 +53,7 @@ class CartActivity : ComponentActivity() {
         try {
             openFileInput(filename).use { inputStream ->
                 val cartJson = inputStream.bufferedReader().readText()
-                val cartType = object : com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken<List<CartItem>>() {}.type
+                val cartType = object : TypeToken<List<CartItem>>() {}.type
                 cartItems = gson.fromJson(cartJson, cartType)
             }
         } catch (e: FileNotFoundException) {

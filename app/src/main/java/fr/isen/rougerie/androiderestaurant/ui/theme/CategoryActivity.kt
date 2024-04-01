@@ -32,7 +32,6 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import org.json.JSONObject
 import coil.compose.rememberImagePainter
-import fr.isen.rougerie.androiderestaurant.R
 
 
 
